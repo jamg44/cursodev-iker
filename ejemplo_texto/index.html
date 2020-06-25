@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="" onsubmit="return copiar()">
+    <input type="text" id="mi-input">
+    <button type="submit">Aceptar</button>
+    <br>
+    <textarea name="" id="mi-textarea" cols="30" rows="10"></textarea>
+  </form>
+
+  <script>
+    function copiar() {
+      // cogemos el texto que hay en el input
+      var texto = document.getElementById('mi-input').value;
+
+      // creamos el saludo
+      var saludo = 'Hola ' + texto;
+
+      // lo ponemos en el textarea
+      document.getElementById('mi-textarea').value = saludo;
+      return false;
+    }
+  </script>
+
+</body>
+</html>
